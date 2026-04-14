@@ -1,0 +1,13 @@
+testingpython/
+│
+├── emotion_detection.py
+├── server.py
+├── test_emotion_detection.py
+├── __init__.py
+├── README.md
+│
+├── 6b_deployment_test.png
+├── 7c_error_handling_interface.png
+│
+├── templates/
+├── static/
