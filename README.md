@@ -1,4 +1,4 @@
-# testingpython
+# Repository Name: oaqjp-final-project-emb-ai
 # Emotion Detection Application using Watson NLP
 
 ## Project Name
