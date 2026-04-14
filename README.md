@@ -2,7 +2,7 @@
 # Emotion Detection Application using Watson NLP
 
 ## Project Name
-Emotion Detection Web App (Flask + IBM Watson NLP)
+Final Project - Emotion Detection Web App (Flask + IBM Watson NLP)
 
 ## Description
 This project detects emotions from user input text using IBM Watson NLP and displays results via a Flask web application.
