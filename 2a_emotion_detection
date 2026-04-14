@@ -1,0 +1,31 @@
+from ibm_watson import NaturalLanguageUnderstandingV1
+from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
+from ibm_watson.natural_language_understanding_v1 import Features, EmotionOptions
+import json
+
+def emotion_detector(text_to_analyse):
+
+```
+authenticator = IAMAuthenticator('your_api_key_here')
+service = NaturalLanguageUnderstandingV1(
+    version='2022-04-07',
+    authenticator=authenticator
+)
+
+service.set_service_url('your_service_url_here')
+
+response = service.analyze(
+    text=text_to_analyse,
+    features=Features(emotion=EmotionOptions())
+).get_result()
+
+emotions = response['emotion']['document']['emotion']
+
+return {
+    "anger": emotions["anger"],
+    "disgust": emotions["disgust"],
+    "fear": emotions["fear"],
+    "joy": emotions["joy"],
+    "sadness": emotions["sadness"]
+}
+```
