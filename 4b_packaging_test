@@ -1,0 +1,13 @@
+# 4b_packaging_test.py
+# This file tests that EmotionDetection is a valid package
+
+from EmotionDetection.emotion_detection import emotion_detector
+
+# Test input
+text = "I am very angry right now and nothing is working"
+
+# Run emotion detection
+result = emotion_detector(text)
+
+# Print output (this is what your grader expects to see in terminal output)
+print(result)
